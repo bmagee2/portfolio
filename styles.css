@@ -12,17 +12,23 @@ p {
     color: #004cff;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+  }
 
 
-
-/* .navbar-toggler {
-    background-color: blueviolet;
-} */
+.section-header {
+    background-color: palegreen;
+    font-family: 'Lexend Giga', sans-serif;
+    padding-left: 40px;
+}  
 
 /* NAV BAR */
 
 #nav-container {
     padding: 40px;
+    /* position: fixed; */
 }
 
 .nav-item {
@@ -30,108 +36,130 @@ p {
 }
 
 
-
-/* CONTENT SECTIONS */
-
-#content-container {
-    display: flex;
-    flex-direction: column;
-    background-color: green;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 5%;
-}
-
-.section-header {
-    background-color: palegreen;
-    font-family: 'Lexend Giga', sans-serif;
-}
-
 /* LANDING SECTION */
 
 #landing-section {
-    background-color: cadetblue;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    height: 100%;
+    background: yellow;
+    padding-top: 15%;
 }
 
 .about-me {
+    background-color: salmon;
     text-align: left;
     font-size: 22px;
     padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 
 /* PROJECTS SECTION */
 
 #projects-section {
-    background-color: chocolate;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    height: 100%;
+    background: blue;
 }
 
-#project-container {
+/* #container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(51, 23, 209);
-    /* padding-top: 20px;
+    background-color: rgb(160, 67, 82);
+    height: 100%;
+    padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 10px; */
+    margin-bottom: 10px;
+}  */
+
+.container {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.project-row {
-    background-color: lightgreen;
+.row {
+    background-color: rgb(216, 96, 16);
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-}    
-
-.project-column-1 {
-    background-color: #8264B7;
-    /* background: linear-gradient(15deg,#745fb5,#9a6dbb); */
-    /* width: 40%;
-    height: 40%;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: left;
-    padding-left: 10px;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(102,119,136,.55); */
 }
+
+/* .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.row-md-12 {
+    background-color: rgb(112, 5, 116);
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    margin: 10%;
+}     */
+
+.col-md-4 {
+    background-color: #8264B7; 
+    /* background: linear-gradient(15deg,#745fb5,#9a6dbb);  */
+    width: 100%;
+    height: 100%;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(102,119,136,.55); 
+} 
+
 
 .project-column-2 {
     background-color: ghostwhite;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    padding: 30px;
+    box-shadow: 0 1px 1px rgba(102,119,136,.55);
 }
 
 .project-column-3 {
     background-color: orange;
-}
-
-
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(102,119,136,.55);
+} 
 
 /* SKILLS SECTION */
-
 #skills-section {
-    background-color: cornflowerblue;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    height: 100%;
+    background: rgb(212, 46, 143);
 }
-
-
 
 /* FOOTER */
 footer {
     background-color: darkmagenta;
 }
 
+
 /* CONTACT SECTION */
 
 #contact-section {
-    background-color: darkgoldenrod;
+    height: 100%;
+    background: lightblue;
 }
 
 #contact-form {
-    background-color: rebeccapurple;
-    padding: 40px;
+    background-color: rgb(190, 145, 21);
+    padding: 70px;
 }
 
 /* CONTACT FORM - FORMSPREE.IO CODE */
@@ -241,3 +269,10 @@ footer {
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
 }
+
+
+@media (max-width: 600px) {
+    .col-md-4 {
+      width: 100%;
+    }
+  }
