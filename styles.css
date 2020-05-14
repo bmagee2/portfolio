@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background-color: rgb(72, 151, 230);
+    background-color: ghostwhite;
   }
 
 a {
@@ -14,13 +14,17 @@ a {
 
 p {
     font-family: 'Lexend Giga', sans-serif;
-    color: #004cff;
+    color: #111;
 }
 
 .section-header {
-    background-color: whitesmoke;
+    background-color: rgb(255, 166, 0);
     font-family: 'Lexend Giga', sans-serif;
+    color: black;
     padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 4px black;
 }  
 
 
@@ -33,11 +37,17 @@ p {
 
 .nav-item {
     font-family: 'Lexend Giga', sans-serif;
+    font-size: 22px;
 }
 
-h3 {
+/* .nav-item:hover {
+    color: rgb(30, 30, 168);
+} */
+
+
+h3, h2 {
     font-family: 'Lexend Giga', sans-serif;
-    color: darkmagenta;
+    color: black;
 }
 
 
@@ -47,16 +57,31 @@ h3 {
     /* background: yellow; */
     height: 100%;
     padding-top: 15%;
+    margin-bottom: 0;
+    /* padding-left: 20%;
+    padding-right: 20%; */
 }
 
 .about-me {
     /* background-color: salmon; */
     text-align: left;
-    font-size: 22px;
+    font-size: 27px;
     padding: 10px;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 10%;
 
+}
+
+.hello {
+    background-color: rgb(255, 166, 0);
+    font-family: 'Lexend Giga', sans-serif;
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 75%;
+    border: solid 4px black;
+    display: fixed;
 }
 
 /* CONTENT SECTIONS */
@@ -84,11 +109,35 @@ h3 {
 
 .container-fluid {
     /* background-color: orangered; */
+    justify-content: space-evenly;
     padding-top: 15%;
     padding-bottom: 15%;
     padding-left: 5%;
     padding-right: 5%;
+    
 }
+
+.col-md-4 {
+    border: solid 4px black;
+    padding: 10px;
+   
+}
+
+.col-sm-9 {
+    border: solid 4px black;
+    padding: 10px;
+  
+}
+
+.project-text{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* .project-sample {
+    padding: 10px;
+} */
 
 /* SKILLS */
 
@@ -172,7 +221,10 @@ footer {
 
 #contact-form {
     /* background-color: rgb(190, 145, 21); */
+    margin: 30px;
     padding: 70px;
+    border: solid 4px black;
+    /* margin-bottom: 10px; */
 }
 
 /* CONTACT FORM - FORMSPREE.IO CODE */
@@ -221,7 +273,7 @@ footer {
   background-color: white;
   outline-style: solid;
   outline-width: thin;
-  outline-color: gray;
+  outline-color: black;
   outline-offset: -1px;
 }
 #fs-frm [type="text"],
